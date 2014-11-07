@@ -1,0 +1,22 @@
+import com.Builder;
+import com.Computer;
+
+/**
+ * Created by liangey on 14-11-7.
+ */
+public class RealBuilder {
+    private Builder builder;
+
+    public void setBuilder(Builder builder) {
+        this.builder = builder;
+    }
+
+    public Builder getBuilder() {
+        return builder;
+    }
+    public void constructComputer(){
+        builder.createComputer();
+        builder.build_cpu();
+        builder.buildScreen();
+    }
+}
